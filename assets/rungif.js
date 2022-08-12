@@ -4,7 +4,8 @@ var redirect = false;
 function playgif() {
   if(!played){
   
-  var audio = document.getElementById("song");;
+  
+  var audio = new Audio('./assets/breadskatehowgif.mp3');
   audio.play();
   
   played = true;
@@ -23,7 +24,6 @@ function delayRedirect () {
 function delayImage(){
 	setTimeout( function() {
 	let img = document.getElementById("how");
-	let a
     img.src = './assets/breadskatehow.gif';
 	}, 500);
 }
