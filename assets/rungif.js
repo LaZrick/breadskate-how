@@ -4,8 +4,7 @@ var redirect = false;
 function playgif() {
   if(!played){
   
-  
-  var audio = new Audio('./assets/breadskatehowgif.mp3');
+  var audio = document.getElementById("song");;
   audio.play();
   
   played = true;
