@@ -14,7 +14,7 @@ function playgif() {
   }
   if(redirect)
   {
-	  window.open('https://store.steampowered.com/app/1677720/BREADSKATE/', '_blank');
+	  toggleLinks();
   }
 }
 
@@ -24,6 +24,15 @@ function delayRedirect () {
 function delayImage(){
 	setTimeout( function() {
 	let img = document.getElementById("how");
+	let a
     img.src = './assets/breadskatehow.gif';
 	}, 500);
 }
+
+var areEnabled = false;
+function toggleLinks(){
+    var anchors = document.getElementsByTagName('a');
+    for(var i=0; i < anchors.length; i++)
+        anchors[i].onclick = (areEnabled) ? null : function(e){ return false };
+    areEnabled = !areEnabled;
+};
