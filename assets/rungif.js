@@ -3,14 +3,14 @@ var redirect = false;
 
 function playgif() {
   if(!played){
-  let img = document.getElementById("how");
-  img.src = './assets/breadskatehow.gif';
+  
   
   var audio = new Audio('./assets/breadskatehowgif.mp3');
   audio.play();
   
   played = true;
-  delay();
+  delayImage();
+  delayRedirect();
   }
   if(redirect)
   {
@@ -18,6 +18,12 @@ function playgif() {
   }
 }
 
-function delay () {
+function delayRedirect () {
 	setTimeout( function() { redirect = true; }, 10000 );
+}
+function delayImage(){
+	setTimeout( function() {
+	let img = document.getElementById("how");
+    img.src = './assets/breadskatehow.gif';
+	}, 500);
 }
