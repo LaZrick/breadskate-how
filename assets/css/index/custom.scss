@@ -1,0 +1,114 @@
+$accent: #fdb967;
+
+div#main {
+  display: block;
+  height: 100vh;
+
+  a {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 100px;
+
+    img {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+#scrolldown {
+  z-index: 2;
+  position: absolute;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+  text-align: center;
+  padding: 50px 0 10px;
+  bottom: 0;
+  left: 0;
+
+  span {
+    display: inline-block;
+    animation: downarrow 5s ease-in-out forwards infinite;
+    font-size: 30px;
+  }
+}
+
+@keyframes downarrow {
+  0%,
+  100% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+
+#infonstuff {
+  display: block;
+  font-style: italic;
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  color: $accent;
+  text-shadow: 6px 6px #000a;
+
+  #logo {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 5px;
+  }
+
+  .desc, .links {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: none;
+    font-style: normal;
+  }
+  .desc {
+    margin: 0;
+  }
+}
+
+.links ul {
+  list-style: none;
+  font-weight: bold;
+  li {
+    margin: 10px 0;
+    a {
+      $trans-props: .2s ease;
+      color: #fff;
+      font-size: 30px !important;
+      transition: color $trans-props;
+      display: inline-block;
+      text-decoration: none !important;
+      &:hover {
+        color: $accent !important;
+        transition: color $trans-props;
+        &::after {
+          background-color: $accent;
+          width: 75%;
+          transition: background-color, $trans-props, width $trans-props;
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        background-color: #fff;
+        width: 50%;
+        height: 3px;
+        margin: 0 auto;
+        transition: background-color, $trans-props, width $trans-props;
+      }
+    }
+  }
+}

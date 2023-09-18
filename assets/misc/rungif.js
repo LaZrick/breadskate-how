@@ -5,7 +5,7 @@ function playgif() {
   if(!played){
   
   
-  var audio = new Audio('./assets/breadskatehowgif.mp3');
+  var audio = new Audio('./assets/misc/breadskatehowgif.mp3');
   audio.play();
   
   played = true;
@@ -24,13 +24,13 @@ function delayRedirect () {
 function delayImage(){
 	setTimeout( function() {
 	let img = document.getElementById("how");
-    img.src = './assets/breadskatehow.gif';
+    img.src = '../assets/img/breadskatehow.gif';
 	}, 500);
 }
 
 var areEnabled = false;
 function toggleLinks(){
-    var anchors = document.getElementsByTagName('a');
+    var anchors = document.getElementsByClassName('howlink');
     for(var i=0; i < anchors.length; i++)
         anchors[i].onclick = (areEnabled) ? null : function(e){ return false };
     areEnabled = !areEnabled;
