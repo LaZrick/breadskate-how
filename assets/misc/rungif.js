@@ -24,7 +24,7 @@ function delayRedirect () {
 function delayImage(){
 	setTimeout( function() {
 	let img = document.getElementById("how");
-    img.src = '../assets/img/breadskatehow.gif';
+    img.src = './assets/img/breadskatehow.gif';
 	}, 500);
 }
 

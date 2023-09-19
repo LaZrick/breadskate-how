@@ -1,14 +1,15 @@
 #logo {
   display: block;
   margin: 0 auto;
-  width: 40%;
+  width: 30%;
   margin-bottom: 5px;
 }
 
 #desc {
-  text-align: center;
-  width: 75%;
-  margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 25px;
 }
 #desc h1 {
   font-size: 50px;
@@ -16,11 +17,82 @@
 #desc p {
   font-size: 25px;
 }
+#desc .space {
+    margin: 10px 0;
+}
+#desc .about{
+    width: 75%;
+    margin: 0 auto;
+}
+
+#desc a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.2s ease;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+#desc a:hover {
+    color: #fdb967 !important;
+    transition: color 0.2s ease;
+}
+
+#desc a:hover::after {
+    background-color: #fdb967;
+    width: 75%;
+    transition: background-color, 0.2s ease, width 0.2s ease;
+}
+
+#desc a::after {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+    transition: background-color, 0.2s ease, width 0.2s ease;
+}
 
 .media {
-  margin-top: 25px;
+    margin-top: 25px;
+}
+.media video {
+    margin-top: 25px;
+    width: 75%;
+    margin: 0 auto;
+}
+.media img{
+}
+.media .space {
+    margin: 10px 0;
+}
+.media h1 {
+  font-size: 50px;
+}
+.media h2 {
+  font-size: 45px;
 }
 .media p {
   font-size: 25px;
-  margin: 0;
+  margin: 15px;
 }/*# sourceMappingURL=custom.css.map */
+
+ .links {
+  
+}
+
+.divider {
+    width: 85%;
+    height: 1px;
+    background: #aaa;
+    margin: 20px auto;
+}
+.bigdivider {
+    width: 85%;
+    height: 3px;
+    background: #aaa;
+    margin: 20px auto;
+}
+
+
