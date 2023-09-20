@@ -6,66 +6,76 @@
 }
 
 #desc {
-    text-align: center;
-    width: 75%;
-    margin: 0 auto;
-    font-size: 25px;
-}
-#desc h1 {
-  font-size: 50px;
-}
-#desc p {
+  text-align: center;
+<<<<<<< Updated upstream
+  width: 70%;
+  margin: 0 auto;
+=======
+  width: 75%;
+  margin: 0 auto;
   font-size: 25px;
+>>>>>>> Stashed changes
 }
+#desc h1, #desc h2, #desc h3 {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+#desc p, #desc div {
+  font-size: 20px;
+}
+
+.media p, .media div {
+  font-size: 25px;
+  margin: 0;
+}
+<<<<<<< Updated upstream
+.media .desc {
+  margin: 7px 0;
+}/*# sourceMappingURL=custom.css.map */
+=======
 #desc .space {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-#desc .about{
-    width: 75%;
-    margin: 0 auto;
+#desc .about {
+  width: 75%;
+  margin: 0 auto;
 }
-
 #desc a {
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.2s ease;
-    display: inline-block;
-    text-decoration: none !important;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  display: inline-block;
+  text-decoration: none !important;
 }
-
 #desc a:hover {
-    color: #fdb967 !important;
-    transition: color 0.2s ease;
+  color: #fdb967 !important;
+  transition: color 0.2s ease;
 }
-
 #desc a:hover::after {
-    background-color: #fdb967;
-    width: 75%;
-    transition: background-color, 0.2s ease, width 0.2s ease;
+  background-color: #fdb967;
+  width: 75%;
+  transition: background-color, 0.2s ease, width 0.2s ease;
 }
-
 #desc a::after {
-    content: "";
-    display: block;
-    background-color: #fff;
-    width: 50%;
-    height: 3px;
-    margin: 0 auto;
-    transition: background-color, 0.2s ease, width 0.2s ease;
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 50%;
+  height: 3px;
+  margin: 0 auto;
+  transition: background-color, 0.2s ease, width 0.2s ease;
 }
 
 .media {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 .media video {
-    margin-top: 25px;
-    width: 75%;
-    margin: 0 auto;
-}
-.media img{
+  margin-top: 25px;
+  width: 75%;
+  margin: 0 auto;
 }
 .media .space {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 .media h1 {
   font-size: 50px;
@@ -76,23 +86,47 @@
 .media p {
   font-size: 25px;
   margin: 15px;
-}/*# sourceMappingURL=custom.css.map */
-
- .links {
-  
 }
 
 .divider {
-    width: 85%;
-    height: 1px;
-    background: #aaa;
-    margin: 20px auto;
+  width: 85%;
+  height: 1px;
+  background: #aaa;
+  margin: 20px auto;
 }
 .bigdivider {
-    width: 85%;
-    height: 3px;
-    background: #aaa;
-    margin: 20px auto;
+  width: 85%;
+  height: 3px;
+  background: #aaa;
+  margin: 20px auto;
 }
 
+@media screen and (max-width: 720px) {
+  #back {
+    display: none !important;
+  }
 
+  #logo {
+    width: 75%;
+    margin-top: 15px;
+  }
+
+  #desc h1 {
+    font-size: 30px;
+  }
+  #desc p,
+  #desc div {
+    font-size: 17px;
+  }
+  #desc iframe {
+    width: auto;
+    height: auto;
+  }
+
+  .media video,
+  .media img {
+    width: 90% !important;
+    height: auto !important;
+  }
+}
+>>>>>>> Stashed changes
