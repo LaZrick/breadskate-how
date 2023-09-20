@@ -22,9 +22,9 @@ div#main a img {
   font-size: 25px;
   width: 100%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 30px, rgba(0, 0, 0, 0) 100%);
   text-align: center;
-  padding: 50px 0 10px;
+  padding: 60px 0 10px;
   bottom: 0;
   left: 0;
 }
@@ -36,7 +36,7 @@ div#main a img {
 
 @keyframes downarrow {
   0%, 100% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
   50% {
     transform: translateY(0px);
@@ -99,4 +99,4 @@ div#main a img {
   height: 3px;
   margin: 0 auto;
   transition: background-color, 0.2s ease, width 0.2s ease;
-}/*# sourceMappingURL=custom.css.map */
+}

@@ -13,11 +13,22 @@ body {
   overflow-x: hidden;
 }
 
+a,
+a:focus,
+a:visited {
+  color: #fdb967;
+  transition: color .2s ease;
+}
+a:hover,
+a:active {
+  color: #ffd098;
+  transition: color .2s ease;
+}
+
 ::selection {
   color: #000;
   background: #fff;
 }
-
 
 
 #back {
