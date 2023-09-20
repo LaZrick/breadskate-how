@@ -7,14 +7,9 @@
 
 #desc {
   text-align: center;
-<<<<<<< Updated upstream
-  width: 70%;
   margin: 0 auto;
-=======
   width: 75%;
-  margin: 0 auto;
   font-size: 25px;
->>>>>>> Stashed changes
 }
 #desc h1, #desc h2, #desc h3 {
   font-size: 50px;
@@ -28,11 +23,6 @@
   font-size: 25px;
   margin: 0;
 }
-<<<<<<< Updated upstream
-.media .desc {
-  margin: 7px 0;
-}/*# sourceMappingURL=custom.css.map */
-=======
 #desc .space {
   margin: 10px 0;
 }
@@ -129,4 +119,3 @@
     height: auto !important;
   }
 }
->>>>>>> Stashed changes

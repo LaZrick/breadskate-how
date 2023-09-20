@@ -99,11 +99,7 @@ div#main a img {
   height: 3px;
   margin: 0 auto;
   transition: background-color, 0.2s ease, width 0.2s ease;
-<<<<<<< Updated upstream
-}/*# sourceMappingURL=custom.css.map */
-=======
 }
-
 
 @media screen and (max-width: 720px) {
   body {
@@ -147,4 +143,3 @@ div#main a img {
     padding: 0;
   }
 }
->>>>>>> Stashed changes
