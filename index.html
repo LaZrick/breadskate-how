@@ -1,43 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- property="og:type" content="website" /-->
-  <!--meta property="og:url" content="https://breadskate.how/" /-->
-  <meta property="og:image" content="https://media.discordapp.net/attachments/975233172126203916/1021223140661141534/esports.gif" />
-  <!--meta property="og:description" content="when the" /-->
-  <meta name="theme-color" content="#000000">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <title>how</title>
-
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      overflow: hidden;
-      background: #000;
-    }
-    img {
-      display: block;
-      margin: 0 auto;
-      height: 100%;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breadskate.how</title>
+    <meta property="og:image" content="https://media.discordapp.net/attachments/975233172126203916/1021223140661141534/esports.gif" />
+    <meta name="theme-color" content="#000000">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/master.css">
+    <link rel="stylesheet" href="./assets/css/index/custom.css">
 </head>
-<body > 
-  <a href='https://store.steampowered.com/app/1677720/BREADSKATE/' target='_blank' rel="noopener">
-  <img id="how" onclick="playgif()" src="./assets/clickbread.png" alt="how">
-  </a>
+<body>
 
-  <script src="./assets/rungif.js"></script>
-  <script>
-  toggleLinks();
-  </script>
-  
+    <div id="main">
+        <a class="howlink" href="https://store.steampowered.com/app/1677720/BREADSKATE" target="_blank" rel="noopener noreferrer">
+            <img id="how" onclick="playgif()" src="./assets/img/clickbread.png" alt="breadskate">
+        </a>
+    </div>
+
+    <div id="scrolldown">
+        <span>&#x2193;</span>
+        scoll down for more info!
+        <span>&#x2193;</span>
+    </div>
+
+    <div id="infonstuff">
+        <span class="header" hidden>BREADSKATE</span>
+        <img id="logo" src="./assets/img/logo.png" alt="">
+        <p class="desc">
+            <b>BRDSKT <i>(BREADSKATE)</i></b> is a freeroam skating 3D Platformer, where you play as bread, and ducks armed with guns have invaded your world.<br>
+            Made by LaZrick, indie gamedev generalist and 3D artist.<br>
+            Check out stuff below if you want to know more about me or the game.
+        </p>
+
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="./aboutgame.html">About the game</a>
+                </li>
+                <li>
+                    <a href="./aboutme.html">About me</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@lazrick">YouTube</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/LaZrick_">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./assets/misc/rungif.js"></script>
+    <script>toggleLinks()</script>
 </body>
 </html>

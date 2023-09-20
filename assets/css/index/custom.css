@@ -1,0 +1,102 @@
+div#main {
+  display: block;
+  height: 100vh;
+}
+div#main a {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+div#main a img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#scrolldown {
+  z-index: 2;
+  position: absolute;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 30px, rgba(0, 0, 0, 0) 100%);
+  text-align: center;
+  padding: 60px 0 10px;
+  bottom: 0;
+  left: 0;
+}
+#scrolldown span {
+  display: inline-block;
+  animation: downarrow 5s ease-in-out forwards infinite;
+  font-size: 30px;
+}
+
+@keyframes downarrow {
+  0%, 100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+#infonstuff {
+  display: block;
+  font-style: italic;
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  color: #fdb967;
+  text-shadow: 6px 6px rgba(0, 0, 0, 0.6666666667);
+}
+#infonstuff #logo {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  margin-bottom: 5px;
+}
+#infonstuff .desc, #infonstuff .links {
+  font-size: 25px;
+  color: #fff;
+  text-shadow: none;
+  font-style: normal;
+}
+#infonstuff .desc {
+  margin: 0;
+}
+
+.links ul {
+  list-style: none;
+  font-weight: bold;
+}
+.links ul li {
+  margin: 10px 0;
+}
+.links ul li a {
+  color: #fff;
+  font-size: 30px !important;
+  transition: color 0.2s ease;
+  display: inline-block;
+  text-decoration: none !important;
+}
+.links ul li a:hover {
+  color: #fdb967 !important;
+  transition: color 0.2s ease;
+}
+.links ul li a:hover::after {
+  background-color: #fdb967;
+  width: 75%;
+  transition: background-color, 0.2s ease, width 0.2s ease;
+}
+.links ul li a::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 50%;
+  height: 3px;
+  margin: 0 auto;
+  transition: background-color, 0.2s ease, width 0.2s ease;
+}
