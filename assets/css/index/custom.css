@@ -33,7 +33,6 @@ div#main a img {
   animation: downarrow 5s ease-in-out forwards infinite;
   font-size: 30px;
 }
-
 @keyframes downarrow {
   0%, 100% {
     transform: translateY(-10px);
@@ -42,6 +41,7 @@ div#main a img {
     transform: translateY(0px);
   }
 }
+
 #infonstuff {
   display: block;
   font-style: italic;
@@ -99,4 +99,47 @@ div#main a img {
   height: 3px;
   margin: 0 auto;
   transition: background-color, 0.2s ease, width 0.2s ease;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    margin-bottom: unset !important;
+  }
+
+  #main {
+    height: 25vh !important;
+  }
+  #main img {
+    height: auto !important;
+  }
+
+  #scrolldown {
+    bottom: unset !important;
+    top: 15vh;
+    font-size: 20px;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 15px, rgba(0, 0, 0, 0) 50%);
+  }
+  #scrolldown span {
+    font-size: 20px;
+  }
+
+  #infonstuff {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  #infonstuff .desc,
+  .links {
+    font-size: 17px !important;
+  }
+  .links ul li a {
+    font-size: 20px !important;
+  }
+  .links {
+    margin: 0 auto;
+    width: 75%;
+  }
+  .links ul {
+    padding: 0;
+  }
 }
